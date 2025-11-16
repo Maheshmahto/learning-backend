@@ -1,6 +1,9 @@
 import http from 'http'
 
-const server=http.createServer( );
+const server=http.createServer((req,res)=>{
+    console.log(req)
+    res.end("you requested for something")
+} );
 
 const port=3000;
 
